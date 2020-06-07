@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="unsplash">
+    <Home />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Home from "./components/layout/Home";
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    Home
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="css">
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat&display=swap");
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 75%;
 }
-</style>
+
+footer {
+  text-align: center;
+  padding: 1.5em 0 0;
+}
+
+footer p {
+  font-family: "Fira Sans";
+  position: sticky;
+}
+</style>>
